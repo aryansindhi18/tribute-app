@@ -55,7 +55,7 @@ const friendsData = {
     ],
     memories: [
       { title: "Graduation Day!", image: "/15th.jpeg?height=500&width=300", set: "Beginnings" },
-      { title: "The OG picture!", image: "/https://drive.google.com/uc?export=view&id=19QGAe-_3JyOd9YZQKb6o_W5JQPHY-X8B?height=500&width=300", set: "Beginnings" },
+      { title: "The OG picture!", image: "https://drive.google.com/uc?export=view&id=19QGAe-_3JyOd9YZQKb6o_W5JQPHY-X8B?height=500&width=300", set: "Beginnings" },
       { title: "Convocation@Shaurya", image: "/second.jpeg?height=300&width=300", set: "Beginnings" },
       { title: "Convocation@Elevate", image: "/third.jpeg?height=300&width=300", set: "Beginnings" },
       { title: "Chandigarh trip with simar, golu, bhatia, anjali", image: "/fourth.jpeg?height=300&width=300", set: "Celebrations" },
