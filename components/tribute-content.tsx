@@ -91,13 +91,13 @@ export default function TributeContent({ friendData }: { friendData: any }) {
     if (openEndedAnswer.trim() !== "") {
       setShowOpenEndedMessage(true)
 
-      // Add a delay before unlocking all remaining memories
-      setTimeout(() => {
-        const allMemoryIndices = friendData.memories.map((_: any, index: number) => index)
-        setUnlockedMemories(allMemoryIndices)
-        setCurrentQuiz(null)
-        // setOpenEndedAnswer("")
-      }, 5000)
+      // // Add a delay before unlocking all remaining memories
+      // setTimeout(() => {
+      //   const allMemoryIndices = friendData.memories.map((_: any, index: number) => index)
+      //   setUnlockedMemories(allMemoryIndices)
+      //   setCurrentQuiz(null)
+      //   // setOpenEndedAnswer("")
+      // }, 5000)
     }
   }
 
@@ -223,6 +223,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                       placeholder="Type your answer here..."
                       className="mb-4"
                       rows={4}
+                      disabled={showOpenEndedMessage} // Disable input after submission, but keep text visible
                     />
 
                     {showOpenEndedMessage && (
@@ -241,7 +242,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                       <Button
                         className={`${getThemeBgColor()} ${getThemeHoverColor()} text-white`}
                         onClick={handleOpenEndedSubmit}
-                        disabled={openEndedAnswer.trim() === ""}
+                        disabled={openEndedAnswer.trim() === "" || showOpenEndedMessage} // Prevent resubmission
                       >
                         Submit Answer
                       </Button>
