@@ -183,7 +183,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                   <h3 className={`font-bold text-sm ${getThemeTextColor()}`}>{memory.title}</h3>
                 </div>
               </Card> */}
-{/*               <Card className="card-back h-64 sm:h-72 flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
+               <Card className="card-back h-64 sm:h-72 flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
                 <div className="relative w-full h-4/5 overflow-hidden rounded-t-lg">
                   <Image
                     src={memory.image}
@@ -193,11 +193,11 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                     objectPosition="50% 30%"
                   />
                 </div>
-                <div className="h-1/5 flex items-center justify-center p-2 border-t bg-white">
+                <div className="h-1/5 flex items-center justify-center p-2 border-t bg-white min-h-[60px]">
                   <h3 className="font-bold text-sm text-purple-700">{memory.title}</h3>
                 </div>
-              </Card> */}
-              <Card className="flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
+              </Card> 
+{/*               <Card className="flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
                 <div className="relative w-full h-56 overflow-hidden">
                   <Image 
                     src={memory.image} 
@@ -209,7 +209,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                 <div className="p-2 text-center border-t bg-white min-h-[60px]">
                   <h3 className="font-bold text-sm text-purple-700">{memory.title}</h3>
                 </div>
-              </Card>
+              </Card> */}
 
             </div>
           </div>
