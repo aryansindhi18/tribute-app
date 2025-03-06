@@ -194,7 +194,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                   />
                 </div>
                 <div className="h-1/5 flex items-center justify-center p-2 border-t bg-white min-h-[60px]">
-                  <h3 className="font-bold text-sm text-purple-700">{memory.title}</h3>
+                  <h3 className="font-bold text-xs md:text-sm text-purple-700">{memory.title}</h3>
                 </div>
               </Card> 
 {/*               <Card className="flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
