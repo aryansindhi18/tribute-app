@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@media (max-width: 768px) {
+  .memory-card {
+    min-height: 250px; /* Adjust for better visibility */
+  }
+}
+
 
 @layer base {
   :root {
