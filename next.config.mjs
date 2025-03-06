@@ -14,6 +14,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
+    domains: ["drive.google.com", "your-image-host.com"],
     unoptimized: true,
   },
   experimental: {
