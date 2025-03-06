@@ -56,7 +56,7 @@ const friendsData = {
     memories: [
       { title: "Lakshya Days!", image: "https://lh3.googleusercontent.com/d/1Dxn73J4LxofWyB-Czs1Se9RGLsBEUkvm=w500-h500", set: "Beginnings" },
       { title: "Chd Trip with chui and garg!", image: "https://lh3.googleusercontent.com/d/1PNki1MPvShSPhakagIWB6k6y2eyUk1RU=w500-h500", set: "Beginnings" },
-      { title: "One where we picked bhats from patiala and went to chd!", image: "https://lh3.googleusercontent.com/d/1w6vhJy0c3vpjElCL1f0XP06DvqxPr4va=w500-h500", set: "Beginnings" },
+      { title: "One where we picked bhats from patiala and went to chd!", image: "https://lh3.googleusercontent.com/d/1xTjWkvzVSLq7oo1ICXZl1O9qLBwn9AWn=w500-h500", set: "Beginnings" },
       { title: "One where our friends got graduated!", image: "https://lh3.googleusercontent.com/d/1camcmedK6aGXe3pBNnRESPeRJTKNLHEC=w500-h500", set: "Beginnings" },
       { title: "Graduation Day!", image: "https://lh3.googleusercontent.com/d/1fZuXPBAs4Xyxh22jKjCRFZIls-VeLrEh=w500-h500", set: "Beginnings" },
       { title: "The OG picture!", image: "https://lh3.googleusercontent.com/d/19QGAe-_3JyOd9YZQKb6o_W5JQPHY-X8B=w500-h500", set: "Beginnings" },
