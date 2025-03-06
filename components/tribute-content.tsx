@@ -183,7 +183,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                   <h3 className={`font-bold text-sm ${getThemeTextColor()}`}>{memory.title}</h3>
                 </div>
               </Card> */}
-               <Card className="card-back h-64 sm:h-72 flex flex-col bg-white shadow-md border-4 border-white rounded-lg min-h-[350px] md:min-h-[250px]">
+               <Card className="card-back h-64 sm:h-72 flex flex-col bg-white shadow-md border-4 border-white rounded-lg min-h-[250px] ">
                 <div className="relative w-full h-4/5 overflow-hidden rounded-t-lg">
                   <Image
                     src={memory.image}
