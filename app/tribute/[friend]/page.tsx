@@ -43,7 +43,7 @@ const friendsData = {
         question: "What's my most used phrase?",
         options: ["I knew it", "Interesting", "Kya baat hai", "Let's do this"],
         correctAnswer: 1,
-        unlocksMemories: [15,16,17,18],
+        unlocksMemories: [15,16,17,18,19],
       },
       {
         question: "What's one thing you admire most about me?",
