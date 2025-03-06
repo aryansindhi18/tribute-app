@@ -345,7 +345,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   </p>
 
   <p className="text-gray-700 text-left mb-4">
-    I was that quiet kid, lost in my own world of silence and struggle. You, with your vibrant energy, broke through my walls. Our first interactions were in that school van, where your relentless conversation drew me out of my shell. You didn't just talk; you listened. You didn't just hear; you understood.
+    I was that quiet kid, lost in my own world of silence and struggle. You, with your vibrant energy, broke through my walls. Our first interactions were in that lakshya van, where your relentless conversation drew me out of my shell. You didn't just talk; you listened. You didn't just hear; you understood.
   </p>
 
   <p className="text-gray-700 text-left mb-4">
@@ -377,7 +377,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
 
   <p className="text-gray-700 text-left">
     <strong>Love you more than words can express,</strong><br />
-    Your Aryan
+    Your Aryan (Sinds) 💜
   </p>
 </div>
 
