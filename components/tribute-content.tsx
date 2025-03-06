@@ -96,7 +96,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
         const allMemoryIndices = friendData.memories.map((_: any, index: number) => index)
         setUnlockedMemories(allMemoryIndices)
         setCurrentQuiz(null)
-        setOpenEndedAnswer("")
+        // setOpenEndedAnswer("")
       }, 5000)
     }
   }
@@ -197,20 +197,6 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                   <h3 className="font-bold text-xs md:text-sm text-purple-700">{memory.title}</h3>
                 </div>
               </Card> 
-{/*               <Card className="flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
-                <div className="relative w-full h-56 overflow-hidden">
-                  <Image 
-                    src={memory.image} 
-                    alt={memory.title} 
-                    layout="fill" 
-                    objectFit="contain"
-                  />
-                </div>
-                <div className="p-2 text-center border-t bg-white min-h-[60px]">
-                  <h3 className="font-bold text-sm text-purple-700">{memory.title}</h3>
-                </div>
-              </Card> */}
-
             </div>
           </div>
         ))}
@@ -225,11 +211,11 @@ export default function TributeContent({ friendData }: { friendData: any }) {
               <div>
                 <h3 className="text-xl font-bold mb-4">{sortedQuestions[currentQuiz].question}</h3>
 
-                {showOpenEndedMessage ? (
+{/*                 {showOpenEndedMessage ? (
                   <div className="text-center p-4 rounded-lg bg-green-50 border border-green-200 mb-4">
                     <p className="text-green-800">{sortedQuestions[currentQuiz].message}</p>
                   </div>
-                ) : (
+                ) : ( */}
                   <>
                     <Textarea
                       value={openEndedAnswer}
@@ -238,6 +224,15 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                       className="mb-4"
                       rows={4}
                     />
+
+                    {showOpenEndedMessage && (
+                      <div className="text-center p-4 rounded-lg bg-green-50 border border-green-200 mb-4">
+                        <p className="text-green-800">
+                          ❤️ That's the right answer! Now, send this to me on WhatsApp because I won't see your answer here. 
+                          Also, just know that I'm forever grateful for you being in my life. 😊
+                        </p>
+                      </div>
+                    )}
 
                     <div className="flex justify-between">
                       <Button variant="outline" onClick={() => setCurrentQuiz(null)}>
@@ -252,7 +247,8 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                       </Button>
                     </div>
                   </>
-                )}
+{/*                 ) */}
+                  }
               </div>
             ) : (
               // Multiple choice question
