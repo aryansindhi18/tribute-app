@@ -56,11 +56,12 @@ const friendsData = {
     memories: [
       { title: "Lakshya Days!", image: "https://lh3.googleusercontent.com/d/1Dxn73J4LxofWyB-Czs1Se9RGLsBEUkvm=w500-h500", set: "Beginnings" },
       { title: "Chd Trip with chui and garg!", image: "https://lh3.googleusercontent.com/d/1PNki1MPvShSPhakagIWB6k6y2eyUk1RU=w500-h500", set: "Beginnings" },
+      { title: "One where we picked bhats from patiala and went to chd!", image: "https://lh3.googleusercontent.com/d/1iEV8TrFTI0UagT4WeVbTivlJqRNRV3_Y=w500-h500", set: "Beginnings" },
       { title: "Graduation Day!", image: "https://lh3.googleusercontent.com/d/1fZuXPBAs4Xyxh22jKjCRFZIls-VeLrEh=w500-h500", set: "Beginnings" },
       { title: "The OG picture!", image: "https://lh3.googleusercontent.com/d/19QGAe-_3JyOd9YZQKb6o_W5JQPHY-X8B=w500-h500", set: "Beginnings" },
       { title: "Convocation@Shaurya", image: "https://lh3.googleusercontent.com/d/1b6hbZRxOLSqHBhklv-BCmYwxwfULjITs=w500-h500", set: "Beginnings" },
       { title: "Convocation@Elevate", image: "https://lh3.googleusercontent.com/d/1vw9pmVn9RmZLj7rZBshLooiJMutGa6WR=w500-h500", set: "Beginnings" },
-      { title: "Chandigarh trip with simar, golu, bhatia, anjali", image: "https://lh3.googleusercontent.com/d/13mBMmzs1khCEqiwlo_nL1hOTMB-E3ZzC=w500-h500", set: "Celebrations" },
+      { title: "Chandigarh trip with simar, golu", image: "https://lh3.googleusercontent.com/d/13mBMmzs1khCEqiwlo_nL1hOTMB-E3ZzC=w500-h500", set: "Celebrations" },
       { title: "Ooty <3 Coorg", image: "https://lh3.googleusercontent.com/d/11UtB9ve_nB8bRAqDWw-7XLYvxmoVy3SS=w500-h500", set: "Celebrations" },
       { title: "Ooty <3 Coorg", image: "https://lh3.googleusercontent.com/d/1W9KyOKGq7h16PqP1JlCPgQDusuzFbt10=w500-h500", set: "Celebrations" },
       { title: "Ooty <3 Coorg", image: "https://lh3.googleusercontent.com/d/1RHSwWanoJ35r-GBOj4COy9oh_w-wH96t=w500-h500", set: "Adventures" },
