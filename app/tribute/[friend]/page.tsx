@@ -43,7 +43,7 @@ const friendsData = {
         question: "What's my most used phrase?",
         options: ["I knew it", "Interesting", "Kya baat hai", "Let's do this"],
         correctAnswer: 1,
-        unlocksMemories: [13,14,15],
+        unlocksMemories: [13,14,15,16],
       },
       {
         question: "What's one thing you admire most about me?",
@@ -55,6 +55,7 @@ const friendsData = {
     ],
     memories: [
       { title: "Lakshya Days!", image: "https://lh3.googleusercontent.com/d/1Dxn73J4LxofWyB-Czs1Se9RGLsBEUkvm=w500-h500", set: "Beginnings" },
+      { title: "Chd Trip with chui and garg!", image: "https://lh3.googleusercontent.com/d/1PNki1MPvShSPhakagIWB6k6y2eyUk1RU=w500-h500", set: "Beginnings" },
       { title: "Graduation Day!", image: "https://lh3.googleusercontent.com/d/1fZuXPBAs4Xyxh22jKjCRFZIls-VeLrEh=w500-h500", set: "Beginnings" },
       { title: "The OG picture!", image: "https://lh3.googleusercontent.com/d/19QGAe-_3JyOd9YZQKb6o_W5JQPHY-X8B=w500-h500", set: "Beginnings" },
       { title: "Convocation@Shaurya", image: "https://lh3.googleusercontent.com/d/1b6hbZRxOLSqHBhklv-BCmYwxwfULjITs=w500-h500", set: "Beginnings" },
