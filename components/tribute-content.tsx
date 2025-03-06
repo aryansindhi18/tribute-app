@@ -216,7 +216,6 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                     <p className="text-green-800">{sortedQuestions[currentQuiz].message}</p>
                   </div>
                 ) : ( */}
-                  <>
                     <Textarea
                       value={openEndedAnswer}
                       onChange={(e) => setOpenEndedAnswer(e.target.value)}
@@ -247,7 +246,6 @@ export default function TributeContent({ friendData }: { friendData: any }) {
                         Submit Answer
                       </Button>
                     </div>
-                  </>
 {/*                 ) */}
                   }
               </div>
