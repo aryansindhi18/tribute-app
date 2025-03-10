@@ -1113,11 +1113,10 @@ export default function TributeContent({ friendData }: { friendData: any }) {
               <Card className="card-back h-64 sm:h-72 flex flex-col bg-white shadow-md border-4 border-white rounded-lg">
                 <div className="relative w-full h-4/5 overflow-hidden rounded-t-lg">
                   <Image
-                    src={memory.image}
-                    alt={memory.title}
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="50% 30%"
+                          src={memory.image}
+                          alt={memory.title}
+                          fill
+                          style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
                   />
                 </div>
                 <div className="h-1/5 flex items-center justify-center p-2 border-t bg-white">
