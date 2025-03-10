@@ -938,7 +938,7 @@
 //latest code updated - 10 March 2025
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect,useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -949,6 +949,7 @@ import { motion } from "framer-motion";
 import Confetti from "react-confetti";
 
 export default function TributeContent({ friendData }: { friendData: any }) {
+  const targetDivRef = useRef(null);
   const sortedQuestions = friendData.questions.filter((q:any) => q.type !== "open-ended");
   const openEndedQuestion = friendData.questions.find((q:any) => q.type === "open-ended");
 
@@ -962,6 +963,19 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   const [showCelebration, setShowCelebration] = useState(false)
   const [showLetter, setShowLetter] = useState(false)
   const [showLetterEnd,setShowLetterEnd] = useState(false);
+
+  const scrollToDiv = () => {
+    setShowLetter(false);
+    setShowCelebration(false);
+    setShowLetterEnd(true); // Ensures the target div is rendered before scrolling
+
+    // Wait for the next DOM update to ensure the element exists before scrolling
+    setTimeout(() => {
+      if (targetDivRef.current) {
+        (targetDivRef.current as HTMLElement).scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100); // Adjust timeout if needed
+  };
 
   useEffect(() => {
     setProgress((unlockedMemories.length / friendData.memories.length) * 100);
@@ -1221,7 +1235,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
 
       {/* Final Message */}
       {unlockedMemories.length === friendData.memories.length ? (
-  <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6 text-center">
+  <div targetDivRef className="bg-white/90 backdrop-blur-sm rounded-lg p-6 text-center">
     <h2 className={`text-2xl font-bold mb-4 ${getThemeTextColor()}`}>🎉 Congratulations! 🎉</h2>
     <p className="text-gray-700 mb-4">
       You've unlocked all the memories! Now, there's just one last thing left:
@@ -1301,11 +1315,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
               </div>
 
               <p className="mt-4 text-purple-700 font-handwritten text-xl">With infinite love, Your Dearest Sinds ❤️</p>
-                  <Button className="mt-4 bg-red-500 hover:bg-red-600 text-white" onClick={() => {
-                    setShowLetter(false);
-                    setShowCelebration(false);
-                    setShowLetterEnd(true);
-                  }}>Close</Button>
+                  <Button className="mt-4 bg-red-500 hover:bg-red-600 text-white" onClick={scrollToDiv}>Close</Button>
             </motion.div>
           </Card>
         </motion.div>
