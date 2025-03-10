@@ -950,6 +950,8 @@ import Confetti from "react-confetti";
 
 export default function TributeContent({ friendData }: { friendData: any }) {
   const targetDivRef = useRef(null);
+  const [showFinalUnlocking, setShowFinalUnlocking] = useState(false);
+  const [countdown, setCountdown] = useState(3);
   const sortedQuestions = friendData.questions.filter((q:any) => q.type !== "open-ended");
   const openEndedQuestion = friendData.questions.find((q:any) => q.type === "open-ended");
 
@@ -979,13 +981,24 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   };
 
   useEffect(() => {
-    setProgress((unlockedMemories.length / friendData.memories.length) * 100);
     if (unlockedMemories.length === friendData.memories.length) {
-      setTimeout(()=>{
-        setShowCelebration(true);
-      },1000);
+      setShowFinalUnlocking(true); // Show countdown overlay
+      setCountdown(3); // Reset countdown
+  
+      let countdownInterval = setInterval(() => {
+        setCountdown((prev) => {
+          if (prev === 1) {
+            clearInterval(countdownInterval); // Stop countdown at 1
+            setTimeout(() => {
+              setShowFinalUnlocking(false); // Hide countdown overlay
+              setShowCelebration(true); // Show celebration popup
+            }, 1000); // Small delay after 1
+          }
+          return prev - 1;
+        });
+      }, 1000); // Countdown updates every 1s
     }
-  }, [unlockedMemories, friendData.memories.length])
+  }, [unlockedMemories, friendData.memories.length]);
 
  
   const handleMemoryCardClick = (index: number) => {
@@ -1326,6 +1339,41 @@ export default function TributeContent({ friendData }: { friendData: any }) {
           </Card>
         </motion.div>
       )}
+
+      {showFinalUnlocking && (
+  <div className="fixed inset-0 flex items-start justify-center p-4 z-50">
+    {/* Countdown box at the top */}
+    <motion.div 
+      initial={{ opacity: 0, y: -20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.5 }}
+      className="absolute top-10 bg-white/90 shadow-lg px-6 py-3 rounded-lg text-center">
+      <h2 className="text-lg font-semibold text-gray-800">✨ Celebrations unveiling in... ✨</h2>
+      <motion.div 
+        key={countdown} 
+        initial={{ scale: 0.5, opacity: 0 }} 
+        animate={{ scale: 1.2, opacity: 1 }} 
+        transition={{ duration: 0.5 }}
+        className="text-4xl font-bold text-purple-600 mt-1">
+        {countdown}
+      </motion.div>
+    </motion.div>
+
+    {/* Show final celebration modal AFTER countdown */}
+    {countdown === 0 && (
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8 }} 
+        animate={{ opacity: 1, scale: 1 }} 
+        transition={{ duration: 0.5 }}
+        className="fixed inset-0 flex items-center justify-center bg-black/70 p-4">
+        <Card className="max-w-md w-full p-6 bg-white text-center shadow-lg">
+          <h2 className="text-xl font-bold mb-4">🎉 Celebration Time! 🎉</h2>
+          <p className="text-gray-700">You've unlocked all the memories! 🎊</p>
+        </Card>
+      </motion.div>
+    )}
+  </div>
+)}
       
 
     </div>
