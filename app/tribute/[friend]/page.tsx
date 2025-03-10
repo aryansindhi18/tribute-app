@@ -25,25 +25,25 @@ const friendsData = {
         question: "How many years have we known each other?",
         options: ["5", "7", "10", "12"],
         correctAnswer: 2,
-        unlocksMemories: [4, 5, 6,7],
+        unlocksMemories: [4, 5, 6],
       },
       {
         question: "Where did we first meet?",
         options: ["School", "College", "Lakshya", "Online"],
         correctAnswer: 2,
-        unlocksMemories: [8, 9, 10, 11],
+        unlocksMemories: [7, 8, 9],
       },
       {
         question: "Who's my favorite actress?",
         options: ["Alia Bhatt", "Shraddha Kapoor", "Deepika Padukone", "Katrina Kaif"],
         correctAnswer: 1,
-        unlocksMemories: [12, 13,14],
+        unlocksMemories: [10, 11],
       },
       {
         question: "What's my most used phrase?",
         options: ["I knew it", "Interesting", "Kya baat hai", "Let's do this"],
         correctAnswer: 1,
-        unlocksMemories: [15,16,17,18,19],
+        unlocksMemories: [12, 13,14],
       },
       {
         question: "What's one thing you admire most about me?",
@@ -54,27 +54,70 @@ const friendsData = {
       },
     ],
     memories: [
-      { title: "Lakshya Days!", image: "https://lh3.googleusercontent.com/d/1Dxn73J4LxofWyB-Czs1Se9RGLsBEUkvm=w500-h500", set: "Beginnings" },
-      { title: "Chd Trip with chui and garg!", image: "https://lh3.googleusercontent.com/d/1PNki1MPvShSPhakagIWB6k6y2eyUk1RU=w500-h500", set: "Beginnings" },
-      { title: "One where we picked bhats from patiala and went to chd!", image: "https://lh3.googleusercontent.com/d/1xTjWkvzVSLq7oo1ICXZl1O9qLBwn9AWn=w500-h500", set: "Beginnings" },
-      { title: "One where our friends got graduated!", image: "https://lh3.googleusercontent.com/d/1camcmedK6aGXe3pBNnRESPeRJTKNLHEC=w500-h500", set: "Beginnings" },
-      { title: "Graduation Day!", image: "https://lh3.googleusercontent.com/d/1fZuXPBAs4Xyxh22jKjCRFZIls-VeLrEh=w500-h500", set: "Beginnings" },
-      { title: "The OG picture!", image: "https://lh3.googleusercontent.com/d/19QGAe-_3JyOd9YZQKb6o_W5JQPHY-X8B=w500-h500", set: "Beginnings" },
-      { title: "Convocation@Shaurya", image: "https://lh3.googleusercontent.com/d/1b6hbZRxOLSqHBhklv-BCmYwxwfULjITs=w500-h500", set: "Beginnings" },
-      { title: "Convocation@Elevate", image: "https://lh3.googleusercontent.com/d/1vw9pmVn9RmZLj7rZBshLooiJMutGa6WR=w500-h500", set: "Beginnings" },
-      { title: "Elevate <3", image: "https://lh3.googleusercontent.com/d/1KJZEmB7Ukcd9XByT_paRQn87b-BBl5Sh=w500-h500", set: "Beginnings" },
-      { title: "Chandigarh trip with simar, golu, archit khanna, bhats!", image: "https://lh3.googleusercontent.com/d/13mBMmzs1khCEqiwlo_nL1hOTMB-E3ZzC=w500-h500", set: "Celebrations" },
-      { title: "Ooty <3 Coorg", image: "https://lh3.googleusercontent.com/d/11UtB9ve_nB8bRAqDWw-7XLYvxmoVy3SS=w500-h500", set: "Celebrations" },
-      { title: "Ooty <3 Coorg", image: "https://lh3.googleusercontent.com/d/1W9KyOKGq7h16PqP1JlCPgQDusuzFbt10=w500-h500", set: "Celebrations" },
-      { title: "Ooty <3 Coorg", image: "https://lh3.googleusercontent.com/d/1RHSwWanoJ35r-GBOj4COy9oh_w-wH96t=w500-h500", set: "Adventures" },
-      { title: "My first visit to Worldmark", image: "https://lh3.googleusercontent.com/d/1QRVsXdNPtfoHXOUdliSRhSs8Fk9vYcBp=w500-h500", set: "Adventures" },
-      { title: "The Pallette...", image: "https://lh3.googleusercontent.com/d/1V3-ngMxkR2bvVVzpahSZQKr7wMBCwyji=w500-h500", set: "Adventures" },
-      { title: "India gate...", image: "https://lh3.googleusercontent.com/d/1NZ2aOwTXn71ARu1P8T55BmJhJL4nDGWi=w500-h500", set: "Fun Times" },
-      { title: "Birthday Surprise!", image: "https://lh3.googleusercontent.com/d/1CdrHP0o8nniaZuB8--WyXAm0B6lqedE0=w500-h500", set: "Fun Times" },
-      { title: "Select City Walk", image: "https://lh3.googleusercontent.com/d/1ozlCAPbrRxPj0fwSQc3dmQOYQf9_qqXW=w500-h500", set: "Challenges" },
-      { title: "Cuties@Cyberhub", image: "https://lh3.googleusercontent.com/d/1wnrjASKxpWIkudzvjAfyWab-Mio19o1j=w500-h500", set: "Challenges" },
-      { title: "Diluminatiiiiii!!", image: "https://lh3.googleusercontent.com/d/129r92FFCB_9HF4QWuh4_YDA-vBUSRCgG=w500-h500", set: "Special Moments" },
+      { title: "Graduation Day!", image: "/15th.jpeg?height=500&width=300", set: "Beginnings" },
+      { title: "The OG picture!", image: "/first.jpeg?height=500&width=300", set: "Beginnings" },
+      { title: "Convocation@Shaurya", image: "/second.jpeg?height=300&width=300", set: "Beginnings" },
+      { title: "Convocation@Elevate", image: "/third.jpeg?height=300&width=300", set: "Beginnings" },
+      { title: "Chandigarh trip with simar, golu, bhatia, anjali", image: "/fourth.jpeg?height=300&width=300", set: "Celebrations" },
+      { title: "Ooty <3 Coorg", image: "/fifth.jpeg?height=300&width=300", set: "Celebrations" },
+      { title: "Ooty <3 Coorg", image: "/sixth.jpeg?height=300&width=300", set: "Celebrations" },
+      { title: "Ooty <3 Coorg", image: "/seventh.jpeg?height=300&width=300", set: "Adventures" },
+      { title: "My first visit to Worldmark", image: "/eighth.jpeg.jpeg?height=300&width=300", set: "Adventures" },
+      { title: "The Pallette...", image: "/ninth.jpeg?height=300&width=300", set: "Adventures" },
+      { title: "India gate...", image: "/tenth.jpeg?height=300&width=300", set: "Fun Times" },
+      { title: "Birthday Surprise!", image: "/11th.jpeg?height=300&width=300", set: "Fun Times" },
+      { title: "Select City Walk", image: "/12th.jpeg?height=300&width=300", set: "Challenges" },
+      { title: "Cuties@Cyberhub", image: "/13th.jpeg?height=300&width=300", set: "Challenges" },
+      { title: "Diluminatiiiiii!!", image: "/14th.jpeg?height=300&width=300", set: "Special Moments" },
     ],
+    letter:`
+    <div class="bg-white/90 backdrop-blur-sm rounded-lg p-6 text-center mt-8 shadow-lg">
+    <h2 class="text-3xl font-bold mb-4 text-purple-600">A Letter to My Dearest Gupts</h2>
+    
+    <p class="text-gray-700 text-left mb-4">
+      <strong>Dearest Arushi,</strong>
+    </p>
+    
+    <p class="text-gray-700 text-left mb-4">
+      How do I begin to describe a friendship that has been my lifeline? Ten years ago, when life seemed like a complex maze of challenges, you emerged as my unexpected guardian angel. At 16, when my world was fragmenting—family tensions, a painful breakup, and drifting friendships—you walked into my life with a force of nature that I could never have anticipated.
+    </p>
+  
+    <p class="text-gray-700 text-left mb-4">
+      I was that quiet kid, lost in my own world of silence and struggle. You, with your vibrant energy, broke through my walls. Our first interactions were in that school van, where your relentless conversation drew me out of my shell. You didn't just talk; you listened. You didn't just hear; you understood.
+    </p>
+  
+    <p class="text-gray-700 text-left mb-4">
+      When I found it difficult to express my tumultuous emotions, you gave me the most precious gift—the advice to write. Those words became my therapy, my salvation. You taught me that vulnerability isn't weakness; it's strength. In a world where I'm known for being intensely private, you became my safe haven—the one person with whom my guard completely drops.
+    </p>
+  
+    <p class="text-gray-700 text-left mb-4">
+      People often wonder why I share everything with you and nothing with others. The truth is, you're not just a friend. You're a rare human being who was perhaps strategically placed in my life by the universe. You've been my counselor, my cheerleader, my reality check, and my constant source of unwavering support.
+    </p>
+  
+    <p class="text-gray-700 text-left mb-4">
+      Remember the Garg fiasco? Even during our downs, our friendship emerged stronger. That's the magic of what we share—a bond that transcends momentary conflicts.
+    </p>
+  
+    <p class="text-gray-700 text-left mb-4">
+      If I seem overprotective, if I cancel plans, if I go out of my way for you, don't think that I am doing too much—understand that it's a mere fraction of gratitude for what you've done for me. You helped me grow, heal, and become a better version of myself. My journey of self-discovery has your fingerprints all over it.
+    </p>
+  
+    <p class="text-gray-700 text-left mb-4">
+      So, my dearest <strong className="font-bold">Gupts</strong>, this is more than a thank you. This is an acknowledgment of a friendship that feels divinely orchestrated. You're irreplaceable, incomparable, and infinite in your capacity to love and support.
+    </p>
+  
+    <p class="text-gray-700 text-left italic mb-6">
+    <strong>
+      "Mannat se jo mila, qismat ne jo diya<br />
+      Tohfa hai yaar tu!!"
+      </strong>
+    </p>
+  
+    <p class="text-gray-700 text-left">
+      <strong>Love you more than words can express,</strong><br />
+      Your Aryan (Sinds) 💜
+    </p>
+  </div>`,
     finalMessage:
       "Arushi, you truly are the best friend anyone could ask for. Your kindness, intelligence, and humor make every day brighter. Here's to many more years of friendship! ❤️",
   },
