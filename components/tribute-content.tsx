@@ -965,9 +965,10 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   const [showLetterEnd,setShowLetterEnd] = useState(false);
 
   const scrollToDiv = () => {
-    setShowLetter(false);
-    setShowCelebration(false);
-    setShowLetterEnd(true); // Ensures the target div is rendered before scrolling
+      setShowLetter(false);
+      setShowCelebration(false);
+      setShowLetterEnd(true); // Ensures the target div is rendered before scrolling
+    
 
     // Wait for the next DOM update to ensure the element exists before scrolling
     setTimeout(() => {
@@ -980,7 +981,9 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   useEffect(() => {
     setProgress((unlockedMemories.length / friendData.memories.length) * 100);
     if (unlockedMemories.length === friendData.memories.length) {
-      setShowCelebration(true);
+      setTimeout(()=>{
+        setShowCelebration(true);
+      },1000);
     }
   }, [unlockedMemories, friendData.memories.length])
 
@@ -1232,6 +1235,10 @@ export default function TributeContent({ friendData }: { friendData: any }) {
           </Card>
         </div>
       )}
+      {showLetterEnd && <div ref={targetDivRef} dangerouslySetInnerHTML={{ __html: friendData.letter }}>
+      </div>
+      }
+      <br />
 
       {/* Final Message */}
       {unlockedMemories.length === friendData.memories.length ? (
@@ -1273,8 +1280,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   </div>
 ) : null}
 
-{showLetterEnd && <div dangerouslySetInnerHTML={{ __html: friendData.letter }}>
-</div>}
+
 
 {/* Celebration Modal */}
 {showCelebration && !showLetter && (
@@ -1285,7 +1291,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
             <p className="text-gray-700 mb-6">But wait... I have something even more special for you. 💜</p>
             <motion.button 
               className="px-6 py-3 bg-purple-600 text-white rounded-full shadow-lg hover:bg-purple-700 text-lg animate-pulse"
-              onClick={() => setShowLetter(true)}>
+              onClick={scrollToDiv}>
               💌 Click Here for a Special Message from Your Dearest Sinds
             </motion.button>
           </Card>
