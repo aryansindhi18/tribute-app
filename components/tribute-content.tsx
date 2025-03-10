@@ -1024,25 +1024,33 @@ export default function TributeContent({ friendData }: { friendData: any }) {
   }
 
   const handleSubmitAnswer = () => {
-    if (currentQuiz === null || selectedAnswer === null) return
-
-    const question = sortedQuestions[currentQuiz]
-
-    if (selectedAnswer === question.correctAnswer) {
-      setIsAnswerCorrect(true)
-
-      // Add a delay before unlocking the memories
-      setTimeout(() => {
-        const newUnlockedMemories = [...unlockedMemories, ...question.unlocksMemories]
-        setUnlockedMemories([...new Set(newUnlockedMemories)])
-        setCurrentQuiz(null)
-        setSelectedAnswer(null)
-        setIsAnswerCorrect(null)
-      }, 1500)
-    } else {
-      setIsAnswerCorrect(false)
-    }
-  }
+      if (currentQuiz === null || selectedAnswer === null) return;
+    
+      const question = sortedQuestions[currentQuiz];
+    
+      if (selectedAnswer === question.correctAnswer) {
+        setIsAnswerCorrect(true);
+    
+        setTimeout(() => {
+          const newUnlockedMemories = [...unlockedMemories, ...question.unlocksMemories];
+          setUnlockedMemories([...new Set(newUnlockedMemories)]);
+          setCurrentQuiz(null);
+          setSelectedAnswer(null);
+          setIsAnswerCorrect(null);
+    
+          // Find next locked memory card and scroll to it
+          setTimeout(() => {
+            const lockedMemoryCard = document.querySelector(".memory-card:not(.flipped)");
+            if (lockedMemoryCard) {
+              lockedMemoryCard.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+          }, 500); // Small delay to allow UI update before scrolling
+    
+        }, 1500); // Delay after showing correct answer feedback
+      } else {
+        setIsAnswerCorrect(false);
+      }
+    };
 
   const handleOpenEndedSubmit = () => {
     if (openEndedAnswer.trim() !== "") {
