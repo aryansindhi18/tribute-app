@@ -46,7 +46,7 @@ const friendsData = {
         unlocksMemories: [16,17,18,19],
       },
       {
-        question: "What's one thing you admire most about me?",
+        question: "What’s a memory of us where you felt I really got you, and how did it bring us closer?",
         type: "open-ended",
         message:
           "That's the right answer! ❤️ Now, send this to me on WhatsApp because I won't see your answer here. Also, just know that I'm forever grateful for you being in my life. 😊",
