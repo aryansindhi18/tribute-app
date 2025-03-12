@@ -46,7 +46,7 @@ const friendsData = {
         unlocksMemories: [16,17,18,19],
       },
       {
-        question: "What’s a memory of us where you felt I really got you, and how did it bring us closer?",
+        question: "Anything you'd like to share about us, our friendship that feels dear to you, and how does it shape our bond?",
         type: "open-ended",
         message:
           "That's the right answer! ❤️ Now, send this to me on WhatsApp because I won't see your answer here. Also, just know that I'm forever grateful for you being in my life. 😊",
