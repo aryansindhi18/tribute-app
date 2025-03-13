@@ -88,11 +88,11 @@ const friendsData = {
     </p>
   
     <p class="text-gray-700 text-left mb-4">
-      I was that quiet kid, lost in my own world of silence and struggle. You, with your vibrant energy, broke through my walls. Our first interactions were in that school van, where your relentless conversation drew me out of my shell. You didn't just talk; you listened. You didn't just hear; you understood.
+      I was that quiet kid, lost in my own world of silence and struggle. You, with your vibrant energy, broke through my walls. Our first interactions were in that school van, where your relentless conversation drew me out of my shell. You didn't just talk, you listened. You didn't just hear, you understood.
     </p>
   
     <p class="text-gray-700 text-left mb-4">
-      When I found it difficult to express my tumultuous emotions, you gave me the most precious gift—the advice to write. Those words became my therapy, my salvation. You taught me that vulnerability isn't weakness; it's strength. In a world where I'm known for being intensely private, you became my safe haven—the one person with whom my guard completely drops.
+      When I found it difficult to express my tumultuous emotions, you gave me the most precious gift—the advice to write. Those words became my therapy, my salvation. You taught me that vulnerability isn't weakness, it's strength. In a world where I'm known for being intensely private, you became my safe haven—the one person with whom my guard completely drops.
     </p>
   
     <p class="text-gray-700 text-left mb-4">
