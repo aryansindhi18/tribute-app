@@ -43,12 +43,12 @@ function FriendSelector() {
           <SelectItem value="arushi" className="text-purple-600 font-medium">
             Arushi The Best
           </SelectItem>
-          <SelectItem value="chui" className="text-blue-600 font-medium">
+{/*           <SelectItem value="chui" className="text-blue-600 font-medium">
             Chui Ka Bacha
           </SelectItem>
           <SelectItem value="bhatia" className="text-red-600 font-medium">
             Bhatia The Casanova
-          </SelectItem>
+          </SelectItem> */}
         </SelectContent>
       </Select>
 
