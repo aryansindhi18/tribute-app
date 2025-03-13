@@ -1936,7 +1936,7 @@ export default function TributeContent({ friendData }: { friendData: any }) {
 
       const hideTimeout = setTimeout(() => {
         setShowSkipButton(false);
-      }, 15000);
+      }, 9000);
 
       return () => clearTimeout(hideTimeout);
     } else {
